@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Task;
+ 
 
 class HomeController extends Controller
 {
@@ -21,6 +21,18 @@ class HomeController extends Controller
         // ]);
     
         // return view('welcome')->withBooks($books);
-    
+     
     }
+
+    public function hello()
+    { 
+        return view('hello');     
+    }
+
+
+    public function contact()
+    {
+        return view('contact');
+    }
+
 }
